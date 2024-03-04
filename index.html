@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-theme="light" lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -12,8 +12,8 @@
     <!-- font awesome link -->
     <script src="https://kit.fontawesome.com/479f6b8171.js" crossorigin="anonymous"></script>
     <!-- ...... -->
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.css">
+    <!-- <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.css"> -->
     <!-- css link -->
     <link rel="stylesheet" href="./Styles/styles.css">
 </head>
@@ -70,7 +70,8 @@
                         </li>
                     </ul>
                     <div class="ml-8">
-                        <a class="btn btn-normal btn-outline btn-primary font-mulish lg:text-xl font-bold rounded-full">Sign In</a>
+                        <a class="btn btn-normal btn-outline btn-primary font-mulish lg:text-xl font-bold rounded-full">Sign
+                            In</a>
                     </div>
                 </div>
             </div>
@@ -92,9 +93,10 @@
                         <p class="mb-3 lg:mb-5 font-mulish">Welcome to the Reverse Forum, where thoughts are flipped,
                             ideas are
                             challenged, and perspectives reversed!</p>
-                        <label class="input input-bordered flex items-center gap-2 rounded-full p-3 lg:p-5 border-black ">
-                            <input id="search-field" type="search" class="grow text-lg lg:text-2xl  border-0 text-black "
-                                placeholder="Search" />
+                        <label
+                            class="input input-bordered flex items-center gap-2 rounded-full p-3 lg:p-5 border-black ">
+                            <input id="search-field" type="search"
+                                class="grow text-lg lg:text-2xl  border-0 text-black " placeholder="Search" />
                             <span onclick="handleSearch()"
                                 class="btn btn-sm text-md lg:text-xl rounded-full btn-primary">Search</span>
                         </label>
@@ -127,16 +129,96 @@
     <!-- header end -->
     <!-- ... -->
     <!-- main start -->
-    <main>
+    <main class="container p-4 mx-auto mt-24">
+        <!-- Let’s Discuss-start -->
 
+        <section class="w-full">
+            <h2 class="text-5xl font-mulish font-extrabold text-center text-black">Let's Discuss</h2>
+            <p class="font-inter text-xl text-center mt-10">"Reverse Forum flips perspectives, challenges norms. Explore
+                unconventional discourse, delve into backward thinking. Unravel mysteries, embrace the unexpected. Join
+                us in redefining dialogue!"</p>
+            <div class="text-center hidden" id="loading-seiner">
+                <span class="loading loading-dots loading-lg  text-[#6974c4]"></span>
+            </div>
+
+            <div class="mt-16 flex flex-col-reverse lg:flex-row justify-between items-start gap-5">
+                <div class="flex justify-center items-center text-center hidden" id="loading-gif">
+                    <img src="./images/Animation - 1709559394359.gif" alt="">
+                 </div>
+
+                <div id="the-info-container" class="grid grid-cols-1 gap-4 flex-1">
+
+                </div>
+                <div class="bg-[#12132D0D] flex-1 p-4">
+                    <div class="flex justify-between item-center bg-white p-4 rounded-3xl mt-5">
+                        <h2 class="w-3/4 text-xl font-bold font-mulish">Title</h2>
+                        <h2><i class="fa-solid fa-check-double text-[#3DCE09]"></i> Mark as read: <span
+                                id="read-number">0</span></h2>
+                    </div>
+                    <div class="p-4 rounded-3xl" id="select-category">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Let’s Discuss-end -->
+
+        <!-- Joint our Forum start -->
+        <section class="my-24 hero text-white hero min-h-screen bg-[#12132D] rounded-3xl"
+        style="background-image: url(./images/bgbanner.png);">
+            <div class="flex flex-col justify-between items-center lg:flex-row px-4">
+                <div class="px-4 pt-4 lg:pt-0 flex-1">
+                    <h1 class="text-5xl font-mulish font-extrabold">Join Our Forum</h1>
+                    <p class="text-xl font-mulish mt-8">Join our vibrant forum community, where ideas flourish,
+                        discussions thrive, and knowledge is shared among passionate individuals like you. </p>
+                    <button class="btn btn-primary px-8 text-xl font-mulish font-bold mt-9">Register Now</button>
+                </div>
+                <div class="flex-1 mt-32 p-10 border-4 border-b-0 border-dashed  font-e">
+                    <img src="./images/joinforum.png" alt="" class="">
+                </div>
+            </div>
+        </section>
+        <!-- Joint our Forum end -->
+
+        <!-- Latest Posts start -->
+        <section>
+            <div class="text-center">
+                <h1 class="text-5xl font-mulish font-extrabold text-center text-black">
+                    Latest Posts
+                </h1>
+                <p class="text-xl font-mulish mt-8">
+                    Yes, you can run unit tests and view the results directly within the app. The integrated testing
+                    features allow for a streamlined .
+                </p>
+            </div>
+            <div class="mt-20">
+                <div id="latestPosts" class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+
+                </div>
+            </div>
+        </section>
+        <!-- Latest Posts end -->
     </main>
-    <!-- main end -->
-    <!-- ... -->
-    <!-- footer start -->
-    <footer>
 
+    <!-- footer -->
+    <footer class="bg-[#30325E1A] py-12 px-6 md:min-h-[400px] md:mt-24 font-mulish">
+        <div class="text-center">
+            <h1 class="text-4xl md:text-6xl text-black">ReVerse</h1>
+            <p class="mt-5 text-lg md:text-2xl">Welcome to the Reverse Forum, where thoughts are flipped, ideas are
+                challenged, and perspectives reversed!</p>
+            <div class="flex gap-4 justify-center items-center mt-6 md:mt-10 text-3xl">
+                <div><i class="fab fa-facebook-f"></i></div>
+                <div><i class="fab fa-twitter"></i></div>
+                <div><i class="fab fa-github"></i></div>
+                <div><i class="fab fa-instagram"></i></div>
+            </div>
+
+            <hr class="my-6 md:my-8" style="border-color: rgb(165, 162, 162); border-width: 1px; border-style: dashed;">
+            <div class="text-gray-600 text-sm md:text-base">
+                <h2>2024, All Rights Reserved.</h2>
+            </div>
+        </div>
     </footer>
-    <!-- footer end -->
     <!-- script -->
     <script src="./js-file/index.js"></script>
 </body>
