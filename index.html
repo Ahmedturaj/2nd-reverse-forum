@@ -20,7 +20,7 @@
 
 <body>
     <!-- header start -->
-    <header>
+    <header class="px-4 container mx-auto">
         <!-- nav start -->
         <nav class="relative mt-6 flex flex-wrap items-center justify-between px-2 py-3 text-2xl mb-3">
             <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
@@ -76,6 +76,53 @@
             </div>
         </nav>
         <!-- nav end -->
+        <!-- .. -->
+        <!-- banner start -->
+        <div class="rounded-2xl" id="banner">
+            <div class="hero min-h-screen bg-[#12132D] rounded-3xl"
+                style="background-image: url(./images/trianglify-lowres.png);">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="p-4 flex flex-col gap-4 lg:flex-row text-neutral-content justify-center items-center">
+                    <div class="text-center lg:text-left">
+                        <h1 class="mb-3 lg:mb-5 text-4xl lg:text-5xl font-extrabold font-mulish">Welcome to the <br>
+                            <span style="background: linear-gradient(to right, rgba(121, 125, 252, 1), rgba(121, 125, 252, 0));
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;">ReVerse</span> Forum
+                        </h1>
+                        <p class="mb-3 lg:mb-5 font-mulish">Welcome to the Reverse Forum, where thoughts are flipped,
+                            ideas are
+                            challenged, and perspectives reversed!</p>
+                        <label class="input input-bordered flex items-center gap-2 rounded-full p-3 lg:p-5 border-black ">
+                            <input id="search-field" type="search" class="grow text-lg lg:text-2xl  border-0 text-black "
+                                placeholder="Search" />
+                            <span onclick="handleSearch()"
+                                class="btn btn-sm text-md lg:text-xl rounded-full btn-primary">Search</span>
+                        </label>
+                    </div>
+                    <div class="bg-white text-black p-3 lg:p-5 rounded-2xl">
+                        <div class="flex flex-col gap-3 lg:gap-4 p-3 lg:p-5">
+                            <div class="flex justify-between items-center text-lg lg:text-2xl">
+                                <h2>Registered Users:</h2>
+                                <h2>01</h2>
+                            </div>
+                            <div class="flex justify-between items-center text-lg lg:text-2xl">
+                                <h2>Forum:</h2>
+                                <h2>02</h2>
+                            </div>
+                            <div class="flex justify-between items-center text-lg lg:text-2xl">
+                                <h2>Topics:</h2>
+                                <h2>03</h2>
+                            </div>
+                            <div class="flex justify-between items-center text-lg lg:text-2xl">
+                                <h2>Replies:</h2>
+                                <h2>03</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- banner end -->
     </header>
     <!-- header end -->
     <!-- ... -->
